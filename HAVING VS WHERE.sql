@@ -1,3 +1,3 @@
 -- HAVING VS WHERE --
 HAVING :
-WHERE:
+WHERE :
