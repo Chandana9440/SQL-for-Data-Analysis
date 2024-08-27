@@ -1,4 +1,5 @@
 -- HAVING VS WHERE --
+<<<<<<< HEAD
 -- WHERE clause filters records before any grouping is done, and it operates on individual rows. --
 -- HAVING clause filters records after the grouping, and it operates on groups (i.e., aggregated results). --
 
@@ -19,3 +20,7 @@ HAVING AVG(salary) > 60000;
 -- Query 2 first filters the employees whose salary is above 65000, then calculates the average for each department, then HAVING clause is applied.
 
 
+=======
+HAVING :
+WHERE :
+>>>>>>> 61a68035d1d2beb2c623d83bfc8b3f0544066489
