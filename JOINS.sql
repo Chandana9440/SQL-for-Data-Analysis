@@ -24,3 +24,23 @@ ON dem.employee_id = sal.employee_id
 
 -- RIGHT JOIN: It is used to returns all records from the right table (the second table), and the matched records from the left table (the first table). 
 -- If there is no match, the result is NULL on the side of the left table.
+ 
+ SELECT *
+ FROM employee_demographics AS dem
+ RIGHT JOIN employee_salary as sal 
+ ON dem.employee_id = sal.employee_id 
+ ;
+ 
+ -- JOINING MULTIPLE TABLES
+ 
+ SELECT * 
+ FROM employee_demographics AS dem
+ JOIN employee_salary AS sal
+ ON dem.employee_id=sal.employee_id
+ JOIN parks_departments AS dep
+ ON sal.dept_id=dep.department_id
+ ;
+
+
+
+
