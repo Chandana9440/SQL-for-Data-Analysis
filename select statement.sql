@@ -1,16 +1,17 @@
 SELECT * 
-FROM  
-parks_and_recreation.employee_salary;
+FROM  parks_and_recreation.employee_salary
+WHERE salary>=50000
+;
 
-SELECT first_name, 
-last_name,
-salary, 
-(salary/10)+5*2
-FROM
-parks_and_recreation.employee_salary;
-#PEMDAS
+SELECT first_name, age
+FROM parks_and_recreation.employee_demographics
+WHERE 
+age>40
+;
 
-SELECT 
-distinct first_name, salary
-FROM
-parks_and_recreation.employee_salary; 
+SELECT first_name, age, gender
+FROM parks_and_recreation.employee_demographics
+WHERE 
+gender!="female"
+;
+
