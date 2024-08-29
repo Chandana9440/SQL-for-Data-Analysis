@@ -28,7 +28,16 @@ SELECT first_name, SUBSTRING(first_name, 2,5) FROM employee_demographics;
 SELECT birth_date, SUBSTRING(birth_date, 6,2) FROM employee_demographics;
 
 
--- CONCATENATE: Used to join 
+-- CONCATENATE: Used to add two or more expressions together
+SELECT CONCAT(first_name, " ", last_name)AS Full_Name FROM employee_demographics;
+
+-- REPLACE: Used to replace one name with other
+SELECT first_name, REPLACE(first_name, NAME) FROM employee_demographics;
+SELECT first_name, REPLACE(first_name, 'a', 'z') FROM employee_demographics;
+
+-- To Locate the poistion a single letter or a sequence of letters --
+SELECT first_name, LOCATE('a', first_name) AS Location FROM employee_demographics;
+
 
 
 
