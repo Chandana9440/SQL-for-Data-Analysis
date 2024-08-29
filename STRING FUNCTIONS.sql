@@ -20,6 +20,9 @@ SELECT first_name, LEFT(first_name, 3) FROM employee_demographics;
 SELECT first_name, RIGHT(first_name, 3) FROM employee_demographics;
 
 -- To trim the spaces left and right side of the data --
+SELECT TRIM('     Chandana    ') FROM employee_demographics;
+SELECT LTRIM('     Chandana    ') FROM employee_demographics;
+SELECT RTRIM('     Chandana    ') FROM employee_demographics;
 
 
 -- Substring: To retrieve the substring from a string, 
